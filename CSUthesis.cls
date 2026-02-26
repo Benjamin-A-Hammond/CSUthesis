@@ -145,17 +145,27 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 	\abovedisplayshortskip \z@ \@plus3\p@
     \belowdisplayshortskip 6.5\p@ \@plus3.5\p@ \@minus3\p@
 }
-% 协议页的标题按模板是华文新魏
-\setCJKfamilyfont{hwxw}{STXinwei}[AutoFakeBold]
-\newcommand{\huawenxinwei}{\CJKfamily{hwxw}}
-% 重定义ctex定义好的宋体和黑体，以支持伪加粗AutoFakeBold
-% 即支持类似word里的给黑体、宋体等中文字体加粗的操作，用\bfseries
-\let\heiti\relax
-\newCJKfontfamily[hei]\heiti{SimHei}[AutoFakeBold]
-\let\songti\relax
-\newCJKfontfamily[song]\songti{SimSun}[AutoFakeBold]
+
+% % 协议页的标题按模板是华文新魏
+% \setCJKfamilyfont{hwxw}{STXinwei}[AutoFakeBold]
+% \newcommand{\huawenxinwei}{\CJKfamily{hwxw}}
+% % 重定义ctex定义好的宋体和黑体，以支持伪加粗AutoFakeBold
+% % 即支持类似word里的给黑体、宋体等中文字体加粗的操作，用\bfseries
+% \let\heiti\relax
+% \newCJKfontfamily[hei]\heiti{SimHei}[AutoFakeBold]
+% \let\songti\relax
+% \newCJKfontfamily[song]\songti{SimSun}[AutoFakeBold]
 \let\TimesNewRoman\relax
 \newCJKfontfamily[TimesNewRoman]\TimesNewRoman{Times New Roman}[AutoFakeBold]
+% -----------------------
+\setCJKfamilyfont{hwxw}{chinese.stxinwei.ttf}[Path=./, AutoFakeBold]
+\newcommand{\huawenxinwei}{\CJKfamily{hwxw}}
+% 重定义黑体
+\let\heiti\relax
+\newCJKfontfamily[hei]\heiti{Simhei.ttf}[Path=./, AutoFakeBold]
+% 重定义宋体
+\let\songti\relax
+\newCJKfontfamily[song]\songti{Simsun.ttf}[Path=./, AutoFakeBold]
 
 
 % 每行缩进两个汉字
