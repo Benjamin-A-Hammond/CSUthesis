@@ -1,3 +1,5 @@
+# 2026.02.26 添加了overleaf适配，可直接编译
+
 # 欢迎使用中南大学研究生学位论文LaTex模版（博士和硕士）
 
 ## Prior work on CSU thesis template
